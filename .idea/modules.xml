@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FridgeApp.iml" filepath="$PROJECT_DIR$/.idea/modules/FridgeApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FridgeApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FridgeApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tensorflow-lite/FridgeApp.tensorflow-lite.iml" filepath="$PROJECT_DIR$/.idea/modules/tensorflow-lite/FridgeApp.tensorflow-lite.iml" />
+    </modules>
+  </component>
+</project>
