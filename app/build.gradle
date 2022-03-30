@@ -48,17 +48,30 @@ dependencies {
     androidTestImplementation 'com.google.truth:truth:1.0.1'
 
     //Navigation
-    implementation 'androidx.navigation:navigation-fragment:2.1.0'
-    implementation 'androidx.navigation:navigation-ui:2.1.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
 
     //Tenserflow
     implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
     implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly'
 
     //Room
-    implementation "androidx.room:room-runtime:2.3.0"
-    kapt "androidx.room:room-compiler:2.3.0"
+    implementation "androidx.room:room-runtime:2.4.2"
+    kapt "androidx.room:room-compiler:2.4.2"
+    implementation "androidx.room:room-ktx:2.4.2"
 
     //gson converter
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // Kotlin components
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0"
+
+    // Coroutine Lifecycle Scopes
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
+
+    // Navigation Component
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
 }
