@@ -14,7 +14,37 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1024a6-984b-4437-b443-70ff3465285a" name="Default Changelist" comment="" />
+    <list default="true" id="4c1024a6-984b-4437-b443-70ff3465285a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/data/repository/Repository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/org/tensorflow/lite/examples/detection/DetectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/ayse/lite/examples/detection/DetectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/customview/AutoFitTextureView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/customview/AutoFitTextureView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/customview/OverlayView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/customview/OverlayView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/customview/RecognitionScoreView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/customview/RecognitionScoreView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/customview/ResultsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/customview/ResultsView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/data/model/Food.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/data/model/Food.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/data/model/Foods.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/data/model/Foods.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/data/repository/Repository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/data/room/FoodDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/data/room/FoodDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/data/room/FoodDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/data/room/FoodDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/data/room/TypeConverters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/data/room/TypeConverters.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/env/BorderedText.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/env/BorderedText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/env/ImageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/env/ImageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/env/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/env/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/env/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/env/Size.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/presentation/activity/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/presentation/activity/BaseActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/presentation/activity/CameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/presentation/activity/CameraActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/presentation/activity/DetectorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/presentation/activity/DetectorActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/presentation/fragment/CameraConnectionFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/presentation/fragment/CameraConnectionFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/presentation/fragment/LegacyCameraConnectionFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/presentation/fragment/LegacyCameraConnectionFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/tflite/Classifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/tflite/Classifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/tflite/TFLiteObjectDetectionAPIModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/tflite/TFLiteObjectDetectionAPIModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/tracking/MultiBoxTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/tracking/MultiBoxTracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_base.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tfe_od_camera_connection_fragment_tracking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tfe_od_camera_connection_fragment_tracking.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,12 +76,11 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dYsv3XPt8SeCbkAgXQxG5QqHav" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -350,7 +379,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/org/tensorflow/lite/examples/detection/presentation/activity/BaseActivity.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/ayse/fridgeapp/presentation/activity/BaseActivity.kt</url>
           <line>33</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>

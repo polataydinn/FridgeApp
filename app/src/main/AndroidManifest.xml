@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.MainContent">
         <activity
-            android:name=".presentation.activity.BaseActivity"
+            android:name="com.ayse.fridgeapp.presentation.activity.BaseActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.MainContent">
             <intent-filter>
@@ -28,7 +28,7 @@
         </activity>
 
         <activity
-            android:name=".presentation.activity.DetectorActivity"
+            android:name="com.ayse.fridgeapp.presentation.activity.DetectorActivity"
             android:theme="@style/AppTheme.ObjectDetection"></activity>
 
         <meta-data
