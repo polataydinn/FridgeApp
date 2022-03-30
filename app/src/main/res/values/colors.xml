@@ -5,4 +5,19 @@
     <color name="colorPrimaryDark">#ad9574</color>
     <color name="colorAccent">#ff8b1a</color>
     <color name="black">#000000</color>
+    <color name="radical_red">#FF4654</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bunker">#101B25</color>
+    <color name="transparent_radical_red">#D3FF4654</color>
+    <color name="limed_spruce">#374149</color>
+    <color name="transparen_white">#B5FFFFFF</color>
+    <color name="kumera">#8D5B20</color>
+    <color name="shimmerColor">#C2C2C2</color>
+    <color name="dark_blue">#0f1923</color>
+    <color name="transparent_dark_blue">#D7172335</color>
 </resources>

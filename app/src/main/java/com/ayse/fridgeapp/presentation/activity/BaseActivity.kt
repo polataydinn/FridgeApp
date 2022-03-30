@@ -6,6 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.ayse.fridgeapp.data.model.Food
 import com.ayse.fridgeapp.data.model.Foods
+import com.ayse.fridgeapp.presentation.activity.adapter.foods_adapter.FoodsListAdapter
 import com.ayse.fridgeapp.presentation.viewmodel.BaseViewModel
 import org.tensorflow.lite.examples.detection.databinding.ActivityBaseBinding
 import java.util.*
@@ -24,20 +25,23 @@ class BaseActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBaseBinding
     private var listOfFoods: MutableList<String> = mutableListOf()
     private val viewModel: BaseViewModel by viewModels()
+    private lateinit var foodsListAdapter: FoodsListAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBaseBinding.inflate(layoutInflater)
         setContentView(binding.root)
         baseActivity = this
-
+        foodsListAdapter = FoodsListAdapter()
         binding.addItemFloatingButton.setOnClickListener {
             val intent = Intent(this, DetectorActivity::class.java)
             startActivity(intent)
         }
 
         viewModel.getFoods.observe(this) {
-
+            if (it.isNotEmpty()){
+                foodsListAdapter.submitList(it)
+            }
         }
     }
 
