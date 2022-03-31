@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.MainContent">
         <activity
+            android:name="com.ayse.fridgeapp.presentation.activity.DetailActivity"
+            android:exported="false" />
+        <activity
             android:name="com.ayse.fridgeapp.presentation.activity.BaseActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.MainContent">
@@ -26,10 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.ayse.fridgeapp.presentation.activity.DetectorActivity"
-            android:theme="@style/AppTheme.ObjectDetection"></activity>
+            android:theme="@style/AppTheme.ObjectDetection" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -33,6 +33,14 @@ class BaseActivity : AppCompatActivity() {
         setContentView(binding.root)
         baseActivity = this
         foodsListAdapter = FoodsListAdapter()
+
+        foodsListAdapter.onItemClick = {
+            val intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra("food_detail", it)
+            startActivity(intent)
+        }
+
+        binding.recyclerView.adapter = foodsListAdapter
         binding.addItemFloatingButton.setOnClickListener {
             val intent = Intent(this, DetectorActivity::class.java)
             startActivity(intent)
@@ -40,7 +48,7 @@ class BaseActivity : AppCompatActivity() {
 
         viewModel.getFoods.observe(this) {
             if (it.isNotEmpty()){
-                foodsListAdapter.submitList(it)
+                foodsListAdapter.submitList(it.reversed())
             }
         }
     }

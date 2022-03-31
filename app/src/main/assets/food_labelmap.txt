@@ -1,16 +1,16 @@
 ???
-Bread
-Pancake
+Ekmek
+Pankek
 Waffle
-Bagel
-Muffin
-Doughnut
+Simit
+Kek
+Donat
 Hamburger
 Pizza
-Sandwich
-Hot dog
-French fries
-Apple
-Orange
-Banana
-Grape
+Sandviç
+Sosis
+Patetes Kızartma
+Elma
+Portakal
+Muz
+Üzüm
