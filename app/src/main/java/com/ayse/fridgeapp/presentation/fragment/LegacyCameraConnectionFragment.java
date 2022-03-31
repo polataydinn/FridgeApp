@@ -31,6 +31,7 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.ayse.fridgeapp.R;
 import com.ayse.fridgeapp.customview.AutoFitTextureView;
 import com.ayse.fridgeapp.env.ImageUtils;
 import com.ayse.fridgeapp.env.Logger;
@@ -38,7 +39,6 @@ import com.ayse.fridgeapp.env.Logger;
 import java.io.IOException;
 import java.util.List;
 
-import org.tensorflow.lite.examples.detection.R;
 
 public class LegacyCameraConnectionFragment extends Fragment {
   private static final Logger LOGGER = new Logger();

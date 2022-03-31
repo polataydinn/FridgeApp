@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.ayse.fridgeapp.constants.Constants
 import com.ayse.fridgeapp.data.model.Food
-import org.tensorflow.lite.examples.detection.databinding.RowFoodDetailItemBinding
+import com.ayse.fridgeapp.databinding.RowFoodDetailItemBinding
 
 
 class FoodDetailAdapter : ListAdapter<Food, FoodDetailViewHolder>(FoodDetailDiffUtil()) {

@@ -6,9 +6,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.ayse.fridgeapp.constants.Constants
-import com.ayse.fridgeapp.data.model.Food
 import com.ayse.fridgeapp.data.model.Foods
-import org.tensorflow.lite.examples.detection.databinding.RowFoodItemBinding
+import com.ayse.fridgeapp.databinding.RowFoodItemBinding
 import java.util.*
 
 class FoodsListAdapter : ListAdapter<Foods, FoodsListViewHolder>(FoodsListDiffUtil()) {

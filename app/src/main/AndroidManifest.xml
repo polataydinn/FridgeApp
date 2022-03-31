@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.tensorflow.lite.examples.detection">
+    package="com.ayse.fridgeapp">
 
     <uses-sdk />
 
@@ -15,9 +15,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:screenOrientation="portrait"
         android:theme="@style/AppTheme.MainContent">
         <activity
             android:name="com.ayse.fridgeapp.presentation.activity.DetailActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.ayse.fridgeapp.presentation.activity.BaseActivity"
@@ -31,6 +33,7 @@
         </activity>
         <activity
             android:name="com.ayse.fridgeapp.presentation.activity.DetectorActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.ObjectDetection" />
 
         <meta-data

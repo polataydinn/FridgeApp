@@ -7,7 +7,7 @@ apply plugin: 'kotlin-parcelize'
 android {
     compileSdkVersion 32
     defaultConfig {
-        applicationId "org.tensorflow.lite.examples.detection"
+        applicationId "com.ayse.fridgeapp"
         minSdkVersion 21
         targetSdkVersion 32
         versionCode 1

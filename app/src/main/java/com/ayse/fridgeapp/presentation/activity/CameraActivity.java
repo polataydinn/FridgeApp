@@ -19,6 +19,7 @@ package com.ayse.fridgeapp.presentation.activity;
 import android.Manifest;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
@@ -41,13 +42,13 @@ import android.view.Surface;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.ayse.fridgeapp.R;
 import com.ayse.fridgeapp.env.Logger;
 import com.ayse.fridgeapp.presentation.fragment.CameraConnectionFragment;
 import com.ayse.fridgeapp.env.ImageUtils;
 
 import java.nio.ByteBuffer;
 
-import org.tensorflow.lite.examples.detection.R;
 
 import com.ayse.fridgeapp.presentation.fragment.LegacyCameraConnectionFragment;
 
@@ -76,6 +77,7 @@ public abstract class CameraActivity extends AppCompatActivity
         super.onCreate(null);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.tfe_od_activity_camera);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         if (hasPermission()) {
             setFragment();

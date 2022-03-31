@@ -53,6 +53,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.ayse.fridgeapp.R;
 import com.ayse.fridgeapp.env.Logger;
 import com.ayse.fridgeapp.customview.AutoFitTextureView;
 
@@ -64,7 +65,6 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
-import org.tensorflow.lite.examples.detection.R;
 
 @SuppressLint("ValidFragment")
 public class CameraConnectionFragment extends Fragment {

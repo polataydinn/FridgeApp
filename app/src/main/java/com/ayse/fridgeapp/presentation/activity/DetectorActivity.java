@@ -16,6 +16,7 @@
 
 package com.ayse.fridgeapp.presentation.activity;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
@@ -33,6 +34,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.ayse.fridgeapp.R;
 import com.ayse.fridgeapp.env.BorderedText;
 import com.ayse.fridgeapp.env.Logger;
 import com.ayse.fridgeapp.tracking.MultiBoxTracker;
@@ -45,7 +47,6 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.tensorflow.lite.examples.detection.R;
 import com.ayse.fridgeapp.customview.OverlayView;
 import com.ayse.fridgeapp.customview.OverlayView.DrawCallback;
 
@@ -91,6 +92,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
     @Override
     public void onPreviewSizeChosen(final Size size, final int rotation) {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         final float textSizePx =
                 TypedValue.applyDimension(
                         TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
@@ -243,9 +245,9 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                                     public void run() {
                                         TextView detection_text = (TextView) findViewById(R.id.detectText);
                                         if (mappedRecognitions.size() > 0) {
-                                            detection_text.setText("Food detected!");
+                                            detection_text.setText("Yiyecek Bulundu!");
                                         } else {
-                                            detection_text.setText("Point camera at food.");
+                                            detection_text.setText("Kamerayı yiyecek olan yere tutun.");
                                         }
 
                                         TextView frame = (TextView) findViewById(R.id.frame_info);

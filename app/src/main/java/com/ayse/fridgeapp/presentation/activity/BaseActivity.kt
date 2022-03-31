@@ -1,14 +1,15 @@
 package com.ayse.fridgeapp.presentation.activity
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.ayse.fridgeapp.data.model.Food
 import com.ayse.fridgeapp.data.model.Foods
+import com.ayse.fridgeapp.databinding.ActivityBaseBinding
 import com.ayse.fridgeapp.presentation.activity.adapter.foods_adapter.FoodsListAdapter
 import com.ayse.fridgeapp.presentation.viewmodel.BaseViewModel
-import org.tensorflow.lite.examples.detection.databinding.ActivityBaseBinding
 import java.util.*
 
 class BaseActivity : AppCompatActivity() {
@@ -31,6 +32,7 @@ class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBaseBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         baseActivity = this
         foodsListAdapter = FoodsListAdapter()
 

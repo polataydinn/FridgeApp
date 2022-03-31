@@ -12,6 +12,8 @@
         <entry key="app/src/main/res/layout/row_food_item.xml" value="0.2649261474609375" />
         <entry key="app/src/main/res/layout/tfe_od_activity_camera.xml" value="0.2516891891891892" />
         <entry key="app/src/main/res/layout/tfe_od_camera_connection_fragment_tracking.xml" value="0.2516891891891892" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.215" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.215" />
       </map>
     </option>
   </component>

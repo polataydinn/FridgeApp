@@ -1,6 +1,7 @@
 package com.ayse.fridgeapp.constants
 
-import org.tensorflow.lite.examples.detection.R
+import com.ayse.fridgeapp.R
+
 
 object Constants {
     val MONTHS_HASHMAP: HashMap<Int, String> = hashMapOf(
