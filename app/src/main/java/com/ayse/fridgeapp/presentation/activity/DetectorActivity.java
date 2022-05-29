@@ -178,7 +178,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
             ImageUtils.saveBitmap(croppedBitmap);
         }
 
-        runInBackground(
+        runOnUiThread(
                 new Runnable() {
                     @Override
                     public void run() {

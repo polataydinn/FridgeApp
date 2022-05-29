@@ -32,13 +32,16 @@ class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBaseBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         baseActivity = this
         foodsListAdapter = FoodsListAdapter()
 
-        foodsListAdapter.onItemClick = {
+        foodsListAdapter.onItemClick = { food, postion ->
             val intent = Intent(this, DetailActivity::class.java)
-            intent.putExtra("food_detail", it)
+            intent.putExtra("food_detail", food)
+            if (foodsListAdapter.currentList.size > 1 && foodsListAdapter.currentList.size - 1 != postion){
+                intent.putExtra("food_detail_old", foodsListAdapter.currentList[postion + 1])
+            }
             startActivity(intent)
         }
 

@@ -1,10 +1,13 @@
 package com.ayse.fridgeapp.presentation.activity.adapter.food_adapter
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.ayse.fridgeapp.R
 import com.ayse.fridgeapp.constants.Constants
 import com.ayse.fridgeapp.data.model.Food
 import com.ayse.fridgeapp.databinding.RowFoodDetailItemBinding
@@ -33,6 +36,25 @@ class FoodDetailViewHolder(private val binding: RowFoodDetailItemBinding) :
                 binding.detailImage.setImageResource(
                     imageId
                 )
+            }
+
+            if (food.amount == 0) {
+                binding.detailFoodAmount.text = "-"
+            } else {
+                if (food.difference > 0) {
+                    binding.increaseOrDecreaseText.text = "+" + food.difference
+                    binding.increaseOrDecreaseText.visibility = View.VISIBLE
+
+                } else if (food.difference < 0) {
+                    binding.increaseOrDecreaseText.visibility = View.VISIBLE
+                    binding.increaseOrDecreaseText.text = food.difference.toString()
+                    binding.increaseOrDecreaseText.setTextColor(
+                        ContextCompat.getColor(
+                            binding.increaseOrDecreaseText.context,
+                            R.color.red
+                        )
+                    )
+                }
             }
         }
     }

@@ -21,4 +21,6 @@
     <color name="dark_blue">#0f1923</color>
     <color name="orange">#f99520</color>
     <color name="transparent_dark_blue">#D7172335</color>
+    <color name="red">#FF4646</color>
+    <color name="green">#00C980</color>
 </resources>

@@ -12,7 +12,7 @@ import java.util.*
 
 class FoodsListAdapter : ListAdapter<Foods, FoodsListViewHolder>(FoodsListDiffUtil()) {
 
-    var onItemClick: ((Foods) -> Unit)? = null
+    var onItemClick: ((Foods,Int) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodsListViewHolder {
         val binding = RowFoodItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -26,7 +26,7 @@ class FoodsListAdapter : ListAdapter<Foods, FoodsListViewHolder>(FoodsListDiffUt
 
 class FoodsListViewHolder(private val binding: RowFoodItemBinding) :
     RecyclerView.ViewHolder(binding.root) {
-    fun bind(food: Foods?, onItemClick: ((Foods) -> Unit)?) {
+    fun bind(food: Foods?, onItemClick: ((Foods, Int) -> Unit)?) {
         var itemsString = ""
         food?.let {
             it.listOfFoods.forEach { foodItem ->
@@ -45,7 +45,7 @@ class FoodsListViewHolder(private val binding: RowFoodItemBinding) :
                 cardTimeMinutes.text = timeMinutes
             }
             binding.root.setOnClickListener {
-                onItemClick?.invoke(food)
+                onItemClick?.invoke(food, absoluteAdapterPosition)
             }
         }
     }

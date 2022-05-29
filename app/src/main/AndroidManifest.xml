@@ -20,10 +20,11 @@
         <activity
             android:name="com.ayse.fridgeapp.presentation.activity.DetailActivity"
             android:screenOrientation="portrait"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="com.ayse.fridgeapp.presentation.activity.BaseActivity"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/AppTheme.MainContent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,6 +35,7 @@
         <activity
             android:name="com.ayse.fridgeapp.presentation.activity.DetectorActivity"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/AppTheme.ObjectDetection" />
 
         <meta-data
